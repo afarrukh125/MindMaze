@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "466184033338",
+    "firebase_url": "https://mindmaze-8054b.firebaseio.com",
+    "project_id": "mindmaze-8054b",
+    "storage_bucket": "mindmaze-8054b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466184033338:android:7a697a599b393952",
+        "android_client_info": {
+          "package_name": "me.thirtyone.group.mindmaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466184033338-sq74g7vcp65ooh6a56d9tppof8rnisc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.thirtyone.group.mindmaze",
+            "certificate_hash": "4f2512d457cfafdcf206b16172d2c9b14ddde97c"
+          }
+        },
+        {
+          "client_id": "466184033338-rshtjb8er2gch30iv7umlsduc6j7ikbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5HN36gH5PhRLgL1lO7_RRP6j8zdKlEqQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466184033338-rshtjb8er2gch30iv7umlsduc6j7ikbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/createModuleButton"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:text="Create Module"
+        app:layout_constraintBottom_toTopOf="@+id/viewModulesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mindMazeUsername" />
+
+    <Button
+        android:id="@+id/viewModulesButton"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:text="View Modules"
+        app:layout_constraintBottom_toTopOf="@+id/notesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createModuleButton" />
+
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="245dp"
+        android:backgroundTint="@color/colorWarning"
+        android:text="Log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewInvitesButton" />
+
+    <TextView
+        android:id="@+id/mindMazeUsername"
+        android:layout_width="188dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/createModuleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/remindersButton"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:text="Reminders"
+        app:layout_constraintBottom_toTopOf="@+id/viewInvitesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notesButton" />
+
+    <Button
+        android:id="@+id/notesButton"
+        android:layout_width="302dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:text="Notes"
+        app:layout_constraintBottom_toTopOf="@+id/remindersButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewModulesButton" />
+
+    <Button
+        android:id="@+id/viewInvitesButton"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:text="View Invites"
+        app:layout_constraintBottom_toTopOf="@+id/signOutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remindersButton" />
+</android.support.constraint.ConstraintLayout>

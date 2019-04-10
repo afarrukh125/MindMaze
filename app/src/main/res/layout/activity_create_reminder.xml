@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+            android:id="@+id/crCreateButton"
+            android:layout_width="302dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="16dp"
+            android:text="Create Reminder"
+            app:layout_constraintBottom_toTopOf="@+id/crCancelButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/isRepeating" app:layout_constraintHorizontal_bias="0.481"/>
+
+    <Button
+            android:id="@+id/crCancelButton"
+            android:layout_width="302dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginBottom="138dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crCreateButton" app:layout_constraintHorizontal_bias="0.481"/>
+
+    <CheckBox
+            android:id="@+id/isRepeating"
+            android:layout_width="99dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginEnd="155dp"
+            android:checked="false"
+            android:text="Repeat"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:textColorLink="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/crSelectedDate"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/crCreateButton"/>
+
+    <TextView
+            android:id="@+id/crLabel"
+            android:layout_width="312dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="84dp"
+            android:gravity="center"
+            android:text="Creating Personal Reminder"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/reminderMsg"/>
+    <TextView
+            android:layout_width="132dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="48dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:id="@+id/crSelectedDate" android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/isRepeating"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="126dp" android:layout_marginEnd="126dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/crSelectDate"/>
+    <EditText
+            android:layout_width="309dp"
+            android:textAlignment="center"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:layout_height="65dp"
+            android:id="@+id/reminderMsg" android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/crLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="84dp" android:layout_marginEnd="84dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/crSelectDate" android:hint="Reminder Message"/>
+    <Button
+            android:text="Select Date"
+            android:layout_width="306dp"
+            android:layout_height="41dp"
+            android:id="@+id/crSelectDate" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="84dp" android:layout_marginEnd="84dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/reminderMsg" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/crSelectedDate"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/viewInvGoBack"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/inviteList"
+        android:layout_marginTop="-44dp"
+        android:text="Back" />
+
+    <ListView
+        android:id="@+id/inviteList"
+        android:layout_width="match_parent"
+        android:layout_height="682dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp" />
+</RelativeLayout>

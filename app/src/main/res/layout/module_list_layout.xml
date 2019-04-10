@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="100">
+
+
+    <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="moduleName"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_height="60dp"
+            android:id="@+id/modTvName"
+            android:layout_weight="40"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="60">
+
+        <TextView
+                android:gravity="center"
+                android:text="modulePriority"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/modTvPriority"/>
+
+        <TextView
+                android:gravity="center"
+                android:text="modulePermission"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/modTvPermission"
+                android:layout_below="@+id/modTvPriority"/>
+    </LinearLayout>
+
+</LinearLayout>

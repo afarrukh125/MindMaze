@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cmUserLabel"
+        android:layout_width="95dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="8dp"
+        android:text="Username"
+        app:layout_constraintBottom_toTopOf="@+id/cmActivityLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cmModuleName"
+        android:layout_width="325dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Module Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cmCreateModuleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmActivityLabel" />
+
+    <TextView
+        android:id="@+id/cmActivityLabel"
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="30dp"
+        android:text="Creating New Module"
+        app:layout_constraintBottom_toTopOf="@+id/cmModuleName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmUserLabel" />
+
+    <Button
+        android:id="@+id/cmCreateModuleButton"
+        android:layout_width="325dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="8dp"
+        android:text="Create Module"
+        app:layout_constraintBottom_toTopOf="@+id/cmCancelButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmModuleName" />
+
+    <Button
+        android:id="@+id/cmCancelButton"
+        android:layout_width="325dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="306dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cmCreateModuleButton" />
+</android.support.constraint.ConstraintLayout>
